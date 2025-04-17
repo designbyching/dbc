@@ -60,9 +60,9 @@ body {
 
 .logo-img {
   width: 150px;
-  height: 30px;
+  height: 33px;
   display: block;
-  margin-left: -27px;
+  margin-left: -24px;
   padding-left: 0;
 }
 
@@ -72,12 +72,14 @@ body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding: var(--space-md) 0;
+  margin-top: var(--space-md);
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--container-padding);
@@ -124,10 +126,9 @@ body {
 .nav-links.active {
   display: block;
   opacity: 1;
-  transform: translateY(0);
-  background: var(--frost-bg);
-  backdrop-filter: blur(10px); /* Increased blur effect */
-  -webkit-backdrop-filter: blur(10px); /* Increased blur effect */
+  transform: translateY(-10px);
+  background: var(--bg-color);
+  padding-bottom: var(--space-md);
 }
 
 .nav-links ul {
@@ -295,7 +296,7 @@ a:hover {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-md);
   margin: var(--space-lg) 0;
 }
@@ -353,17 +354,6 @@ a:hover {
   text-transform: uppercase;
 }
 
-/*   
-font-family: var(--font-heading);
-  font-size: var(--heading-size);
-  color: var(--text-color);
-  font-weight: 400;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  margin-top: var(--space-lg);
-  margin-bottom: var(--space-lg);
-   */
-
 .toggle-expand,
 .toggle-collapse {
   font-size: var(--text-size);
@@ -419,6 +409,8 @@ font-family: var(--font-heading);
   font-size: var(--text-size);
   color: var(--text-color);
   text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 
 .view-item:hover {
@@ -478,8 +470,14 @@ font-family: var(--font-heading);
   padding: 0 var(--container-padding);
 }
 
-.schedule-call {
+.back-to-top {
   text-transform: uppercase;
+  color: var(--secondary-text);
+  font-size: var(--small-text-size);
+}
+
+.back-to-top:hover {
+  color: var(--accent-color);
 }
 
 /* Media Queries */
@@ -489,7 +487,7 @@ font-family: var(--font-heading);
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 500px) {
   :root {
     --container-padding: 10px; /* Mobile padding */
   }

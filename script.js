@@ -87,3 +87,15 @@ function stopSlideshow(slideshow) {
   clearInterval(slideshow.dataset.interval);
   console.log("Slideshow stopped");
 }
+
+// Smooth Scroll for Back to Top
+const backToTop = document.querySelector(".back-to-top");
+if (backToTop) {
+  backToTop.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+}
