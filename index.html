@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CHING portfolio by Mike Ching. Logo design and digital transformation services."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="CHING—Directed by Mike Ching" />
+    <meta
+      property="og:description"
+      content="From logo design to digital transformation. We create. We transform. You succeed."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    />
+    <meta property="og:url" content="https://ching-site.netlify.app" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CHING—Directed by Mike Ching" />
+    <meta
+      name="twitter:description"
+      content="From logo design to digital transformation. We create. We transform. You succeed."
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; img-src 'self' https://images.unsplash.com data:;"
+    />
+    <title>CHING—Directed by Mike Ching</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header with Sticky Navbar -->
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="container nav-container">
+          <a href="#home" class="nav-logo">CHING</a>
+          <button class="nav-toggle" aria-label="Toggle navigation">
+            <svg
+              class="toggle-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="menu-icon"
+                d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z"
+                fill="var(--text-color)"
+              />
+              <path
+                class="close-icon"
+                d="M6 6L18 18M6 18L18 6"
+                stroke="var(--text-color)"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <h1>From Logo to Legacy.</h1>
+        <p>We Create. We Transform. You Succeed.</p>
+        <p>
+          Mike Ching’s vision in logo design and digital transformation. Your
+          brand, reimagined.
+        </p>
+        <a href="#contact" class="button-a">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2>Our Work</h2>
+        <div class="grid-container">
+          <article
+            class="card grid-item"
+            data-project="logo-1"
+            role="button"
+            aria-label="Toggle Logo Project 1 slideshow"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Logo Project 1"
+              class="project-image"
+              loading="lazy"
+            />
+            <a href="#" class="project-title">Logo Project 1</a>
+            <div class="grid-item-content">
+              <div class="slideshow">
+                <img
+                  src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 1"
+                  class="slide"
+                  loading="lazy"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 2"
+                  class="slide"
+                  loading="lazy"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1619983081563-430f30a7c9e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 3"
+                  class="slide"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </article>
+          <article
+            class="card grid-item"
+            data-project="logo-2"
+            role="button"
+            aria-label="Toggle Logo Project 2 slideshow"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Logo Project 2"
+              class="project-image"
+              loading="lazy"
+            />
+            <a href="#" class="project-title">Logo Project 2</a>
+            <div class="grid-item-content">
+              <div class="slideshow">
+                <img
+                  src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 1"
+                  class="slide"
+                  loading="lazy"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 2"
+                  class="slide"
+                  loading="lazy"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1619983081563-430f30a7c9e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 3"
+                  class="slide"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </article>
+          <article
+            class="card grid-item"
+            data-project="logo-3"
+            role="button"
+            aria-label="Toggle Logo Project 3 slideshow"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1619983081563-430f30a7c9e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Logo Project 3"
+              class="project-image"
+              loading="lazy"
+            />
+            <a href="#" class="project-title">Logo Project 3</a>
+            <div class="grid-item-content">
+              <div class="slideshow">
+                <img
+                  src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 1"
+                  class="slide"
+                  loading="lazy"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 2"
+                  class="slide"
+                  loading="lazy"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1619983081563-430f30a7c9e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 3"
+                  class="slide"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </article>
+          <article
+            class="card grid-item"
+            data-project="logo-4"
+            role="button"
+            aria-label="Toggle Logo Project 4 slideshow"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Logo Project 4"
+              class="project-image"
+              loading="lazy"
+            />
+            <a href="#" class="project-title">Logo Project 4</a>
+            <div class="grid-item-content">
+              <div class="slideshow">
+                <img
+                  src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 1"
+                  class="slide"
+                  loading="lazy"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 2"
+                  class="slide"
+                  loading="lazy"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1619983081563-430f30a7c9e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 3"
+                  class="slide"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </article>
+          <article
+            class="card grid-item"
+            data-project="logo-5"
+            role="button"
+            aria-label="Toggle Logo Project 5 slideshow"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Logo Project 5"
+              class="project-image"
+              loading="lazy"
+            />
+            <a href="#" class="project-title">Logo Project 5</a>
+            <div class="grid-item-content">
+              <div class="slideshow">
+                <img
+                  src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 1"
+                  class="slide"
+                  loading="lazy"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 2"
+                  class="slide"
+                  loading="lazy"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1619983081563-430f30a7c9e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 3"
+                  class="slide"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </article>
+          <article
+            class="card grid-item"
+            data-project="logo-6"
+            role="button"
+            aria-label="Toggle Logo Project 6 slideshow"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1619983081563-430f30a7c9e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Logo Project 6"
+              class="project-image"
+              loading="lazy"
+            />
+            <a href="#" class="project-title">Logo Project 6</a>
+            <div class="grid-item-content">
+              <div class="slideshow">
+                <img
+                  src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 1"
+                  class="slide"
+                  loading="lazy"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 2"
+                  class="slide"
+                  loading="lazy"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1619983081563-430f30a7c9e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 3"
+                  class="slide"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </article>
+          <article
+            class="card grid-item"
+            data-project="logo-7"
+            role="button"
+            aria-label="Toggle Logo Project 7 slideshow"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Logo Project 7"
+              class="project-image"
+              loading="lazy"
+            />
+            <a href="#" class="project-title">Logo Project 7</a>
+            <div class="grid-item-content">
+              <div class="slideshow">
+                <img
+                  src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 1"
+                  class="slide"
+                  loading="lazy"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 2"
+                  class="slide"
+                  loading="lazy"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1619983081563-430f30a7c9e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 3"
+                  class="slide"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </article>
+          <article
+            class="card grid-item"
+            data-project="logo-8"
+            role="button"
+            aria-label="Toggle Logo Project 8 slideshow"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Logo Project 8"
+              class="project-image"
+              loading="lazy"
+            />
+            <a href="#" class="project-title">Logo Project 8</a>
+            <div class="grid-item-content">
+              <div class="slideshow">
+                <img
+                  src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 1"
+                  class="slide"
+                  loading="lazy"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 2"
+                  class="slide"
+                  loading="lazy"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1619983081563-430f30a7c9e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 3"
+                  class="slide"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </article>
+          <article
+            class="card grid-item"
+            data-project="logo-9"
+            role="button"
+            aria-label="Toggle Logo Project 9 slideshow"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1619983081563-430f30a7c9e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Logo Project 9"
+              class="project-image"
+              loading="lazy"
+            />
+            <a href="#" class="project-title">Logo Project 9</a>
+            <div class="grid-item-content">
+              <div class="slideshow">
+                <img
+                  src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 1"
+                  class="slide"
+                  loading="lazy"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 2"
+                  class="slide"
+                  loading="lazy"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1619983081563-430f30a7c9e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Slide 3"
+                  class="slide"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Secondary Hero -->
+    <section class="hero secondary-hero" id="services">
+      <div class="container hero-content">
+        <h1>Your Vision, Our Craft.</h1>
+        <p>From logo design to digital transformation.</p>
+        <p>Let’s build your brand’s future together.</p>
+        <a href="#contact" class="button-a">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Approach Hero -->
+    <section class="hero approach" id="approach">
+      <div class="container hero-content">
+        <h1>Our Approach</h1>
+        <p>We blend creativity and strategy to deliver results.</p>
+        <p>Your success is our mission.</p>
+        <a href="#contact" class="button-a">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Design Brief Section -->
+    <section class="design-brief" id="design-brief">
+      <div class="container brief-content">
+        <h2>Ready to Transform Your Brand?</h2>
+        <p>
+          Share your vision with us, and we’ll craft a logo and digital strategy
+          that sets you apart.
+        </p>
+        <p>Start your project today with Mike Ching’s expertise.</p>
+        <a href="#contact" class="button-a">Start a Project Now</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-left">
+          <a href="#home" class="logo-footer">CHING</a>
+          <p class="footer-slogan">From Logo to Legacy</p>
+          <ul class="social-links">
+            <li>
+              <a
+                href="https://linkedin.com/in/example"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://x.com/example" target="_blank" rel="noopener"
+                >X</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-center">
+          <p>© 2025 CHING. All rights reserved.</p>
+          <p><a href="#home" class="back-to-top">Back to Top</a></p>
+          <p>Directed by Mike Ching</p>
+        </div>
+        <div class="footer-right">
+          <ul class="footer-links">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
