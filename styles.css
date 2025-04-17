@@ -8,13 +8,17 @@
   --frost-bg: rgba(255, 255, 255, 0.8); /* Frosted white */
   --secondary-text: #4d4d4d; /* Medium-grey for secondary text */
 
+  /* Shadows */
+  --shadow-portfolio: 0 0 12px rgba(0, 0, 0, 0.25); /* Portfolio card hover */
+  --shadow-button: 0 0 15px rgba(0, 0, 0, 0.3); /* Button hover */
+
   /* Font Settings */
   --font-heading: "Lato", sans-serif;
   --font-body: "Lato", sans-serif;
 
   /* Typography */
-  --heading-size: 0.8rem;
-  --text-size: 0.8rem;
+  --heading-size: 0.7rem;
+  --text-size: 0.7rem;
   --small-text-size: 0.7rem;
 
   /* Spacing */
@@ -23,6 +27,7 @@
   --space-lg: 2rem;
   --space-xl: 3rem;
   --padding-card: 1rem;
+  --container-padding: 20px; /* Default desktop padding */
 }
 
 /* Global Reset */
@@ -54,11 +59,11 @@ body {
 }
 
 .logo-img {
-  width: 150px; /* Matches the previous SVG width */
-  height: 30px; /* Matches the previous SVG height */
-  display: block; /* Ensures no extra space below the image */
-  margin-left: -27px; /* Ensure no extra margin */
-  padding-left: 0; /* Ensure no extra padding */
+  width: 150px;
+  height: 30px;
+  display: block;
+  margin-left: -27px;
+  padding-left: 0;
 }
 
 /* Navbar */
@@ -75,16 +80,13 @@ body {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--space-md); /* Changed: Added left padding to match right */
+  padding: 0 var(--container-padding);
   position: relative;
 }
+
 .nav-logo {
   margin: 0;
   padding: 0;
-}
-
-.nav-logo svg {
-  display: block;
 }
 
 .nav-toggle {
@@ -95,45 +97,63 @@ body {
 }
 
 .toggle-text {
+  font-family: var(--font-body);
   font-size: var(--text-size);
   color: var(--text-color);
   text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 
 .nav-links {
   display: none;
   position: absolute;
-  top: 100%;
-  right: var(--space-md);
-  background: transparent;
-  backdrop-filter: none;
-  padding: var(--space-md) 0;
+  top: 3rem; /* Below navbar */
+  left: 0;
+  right: 0;
+  width: 100%; /* Full width */
+  padding: 0.5rem var(--container-padding);
   text-align: right;
   transition: opacity 0.3s ease, transform 0.3s ease;
   opacity: 0;
   transform: translateY(-10px);
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .nav-links.active {
   display: block;
   opacity: 1;
   transform: translateY(0);
+  background: var(--frost-bg);
+  backdrop-filter: blur(10px); /* Increased blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Increased blur effect */
 }
 
 .nav-links ul {
   list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Right-align links */
 }
 
 .nav-links li {
-  margin: var(--space-sm) 0;
   list-style: none;
+  margin: var(--space-sm) 0;
 }
 
 .nav-links a {
   color: var(--text-color);
   font-size: var(--text-size);
+  font-family: var(--font-body);
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
   transition: color 0.3s ease;
+  display: block;
+  padding-right: 0; /* Align with CLOSE */
 }
 
 .nav-links a:hover {
@@ -153,17 +173,10 @@ body {
   max-width: 200px;
 }
 
-.schedule-call-btn {
-  font-size: var(--text-size);
-  color: var(--text-color);
-  text-align: left;
+.brief-buttons {
+  display: flex;
+  gap: var(--space-md);
   margin-top: var(--space-lg);
-  display: inline-block;
-  text-transform: uppercase;
-}
-
-.schedule-call-btn:hover {
-  color: var(--accent-color);
 }
 
 /* Typography */
@@ -178,6 +191,12 @@ h3 {
   text-transform: uppercase;
   margin-top: var(--space-lg);
   margin-bottom: var(--space-lg);
+}
+
+h1,
+h2,
+h3.bold {
+  font-weight: 700;
 }
 
 p {
@@ -207,16 +226,71 @@ a:hover {
   color: var(--accent-color);
 }
 
+/* Button Styles */
+.button-1 {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  background: var(--text-color);
+  color: var(--bg-color);
+  font-family: var(--font-body);
+  font-size: var(--text-size);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.button-1:hover {
+  box-shadow: var(--shadow-button);
+}
+
+.button-2 {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--text-color);
+  background: transparent;
+  color: var(--text-color);
+  font-family: var(--font-body);
+  font-size: var(--text-size);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.button-2:hover {
+  box-shadow: var(--shadow-button);
+}
+
+.button-3 {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--text-color);
+  background: transparent;
+  color: var(--text-color);
+  font-family: var(--font-body);
+  font-size: var(--text-size);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.button-3:hover {
+  box-shadow: var(--shadow-button);
+}
+
 /* Components */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--space-md); /* Changed: Added left padding to match right */
+  padding: 0 var(--container-padding);
 }
 
 /* Portfolio */
 .portfolio {
-  padding: var(--space-sm) 0;
+  padding: var(--space-lg) 0;
 }
 
 .grid-container {
@@ -249,12 +323,12 @@ a:hover {
 }
 
 .card:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-portfolio);
 }
 
 @media (hover: none) {
   .card:active {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow-portfolio);
   }
 }
 
@@ -272,10 +346,23 @@ a:hover {
 }
 
 .project-title {
-  font-size: var(--text-size);
+  font-size: var(--font-heading);
   color: var(--text-color);
   text-align: left;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
+
+/*   
+font-family: var(--font-heading);
+  font-size: var(--heading-size);
+  color: var(--text-color);
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-lg);
+   */
 
 .toggle-expand,
 .toggle-collapse {
@@ -298,16 +385,21 @@ a:hover {
 
 .grid-item-content {
   display: none;
+  visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 2;
+  opacity: 0;
 }
 
 .grid-item.expanded .grid-item-content {
   display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
 .expanded-header {
@@ -341,6 +433,7 @@ a:hover {
   height: 100%;
   background: var(--card-bg);
   z-index: 2;
+  opacity: 1;
 }
 
 .slide {
@@ -367,47 +460,7 @@ a:hover {
 
 .brief-content {
   text-align: left;
-  padding: var(
-    --space-md
-  ); /* Changed: Reduced from var(--space-lg) to var(--space-md) for consistency */
   background: transparent;
-}
-
-.brief-buttons {
-  display: flex;
-  gap: var(--space-md);
-  margin-top: var(
-    --space-md
-  ); /* Already correct, ensures spacing after the last paragraph */
-}
-
-.button-1 {
-  display: inline-block;
-  padding: 0.5rem 1.5rem;
-  border: 1px solid var(--text-color);
-  background: transparent;
-  color: var(--text-color);
-  font-weight: 400;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-.button-1:hover {
-  background: var(--text-color);
-  color: var(--bg-color);
-}
-
-.button-2 {
-  display: inline-block;
-  padding: 0.5rem 1.5rem;
-  border: none;
-  background: var(--text-color);
-  color: var(--bg-color);
-  font-weight: 400;
-  transition: opacity 0.3s ease;
-}
-
-.button-2:hover {
-  opacity: 0.8;
 }
 
 /* Footer */
@@ -422,7 +475,7 @@ a:hover {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--space-md); /* Changed: Added left padding to match right */
+  padding: 0 var(--container-padding);
 }
 
 .schedule-call {
@@ -437,6 +490,10 @@ a:hover {
 }
 
 @media (max-width: 390px) {
+  :root {
+    --container-padding: 10px; /* Mobile padding */
+  }
+
   .grid-container {
     grid-template-columns: 1fr;
   }
@@ -453,30 +510,7 @@ a:hover {
   }
 }
 
-/* Mobile Mode: Ensure text containers have min-width of 200px */
-@media (max-width: 390px) {
-  /* Intro Section */
-  .intro-content {
-    min-width: 200px;
-  }
-
-  /* Design Brief Section */
-  .brief-content {
-    min-width: 200px;
-  }
-
-  /* Footer Section */
-  .footer-container {
-    min-width: 200px;
-  }
-
-  /* Navbar Section */
-  .nav-container {
-    min-width: 200px;
-  }
-
-  /* Ensure portfolio grid is not affected */
-  .grid-container {
-    min-width: unset; /* Explicitly exclude portfolio grid */
-  }
+/* Ensure portfolio grid is not affected */
+.grid-container {
+  min-width: unset;
 }

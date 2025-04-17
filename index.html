@@ -29,7 +29,7 @@
     />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; img-src 'self' https://images.unsplash.com data:;"
+      content="default-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com; script-src 'self'; img-src 'self' https://images.unsplash.com data:;"
     />
     <title>Design by Ching—Directed by Mike Ching</title>
     <link
@@ -57,6 +57,7 @@
             <li><a href="#portfolio">PORTFOLIO</a></li>
             <li><a href="#services">SERVICES</a></li>
             <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#blogo">BLOG</a></li>
           </ul>
         </div>
       </nav>
@@ -65,21 +66,24 @@
     <!-- Intro Section Below Navbar -->
     <section class="intro" id="intro">
       <div class="container intro-content">
-        <h1>LOGOS, BRANDING & DIGITAL TRANSFORMATION</h1>
+        <h1 class="h1.bold">LOGOS, BRANDING & DIGITAL TRANSFORMATION</h1>
         <p class="spaced-uppercase">
           DESIGN, DEVELOP, STRATEGY, BRAND360, +HARD CODED WEBSITES.
         </p>
         <p class="spaced-uppercase">
           Directed by Mike Ching | “Turning Chaos into Cash”
         </p>
-        <a href="#contact" class="schedule-call-btn">> SCHEDULE A CALL</a>
+        <div class="brief-buttons">
+          <a href="#contact" class="button-1">SCHEDULE A CALL</a>
+          <a href="#contact" class="button-2">START A PROJECT</a>
+        </div>
       </div>
     </section>
 
     <!-- Portfolio Grid -->
     <section class="portfolio" id="portfolio">
       <div class="container">
-        <h2>- Our Work</h2>
+        <h2>Our Work:</h2>
         <div class="grid-container">
           <article
             class="card grid-item"
@@ -302,7 +306,7 @@
                 />
                 <img
                   src="assets/logo/DBC63-23.png"
-                  alt="Slide 2"
+                  alt="Slide 4"
                   class="slide"
                   loading="lazy"
                 />
