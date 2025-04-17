@@ -489,7 +489,7 @@ a:hover {
 
 @media (max-width: 500px) {
   :root {
-    --container-padding: 10px; /* Mobile padding */
+    --container-padding: 20px; /* Mobile padding */
   }
 
   .grid-container {
