@@ -47,7 +47,7 @@ function startSlideshow(slideshow, slideSelector = ".slide") {
     current = (current + 1) % slides.length;
     slides[current].classList.add("active");
     console.log("Switched to slide:", slides[current].src);
-  }, 2000);
+  }, 3000);
   slideshow.dataset.interval = intervalId.toString();
 }
 
