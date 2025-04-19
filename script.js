@@ -24,46 +24,13 @@ if (navToggle && navLinks && toggleText) {
   });
 }
 
-// Portfolio Toggle and Slideshow
-const gridItems = document.querySelectorAll(".grid-item");
-
-gridItems.forEach((item) => {
-  item.addEventListener("click", (event) => {
-    const link = event.target.closest("a");
-    if (link) {
-      event.stopPropagation(); // Prevent card toggle when clicking links
-      return; // Allow link navigation
-    }
-
-    // UPDATED: Only toggle if slideshow exists
-    const slideshow = item.querySelector(".slideshow");
-    if (!slideshow) {
-      console.log("No slideshow found for", item.dataset.project);
-      return; // Skip if no slideshow (e.g., portfolio.html)
-    }
-
-    // Toggle expanded state
-    gridItems.forEach((i) => i !== item && i.classList.remove("expanded"));
-    item.classList.toggle("expanded");
-
-    // Start or stop slideshow
-    if (item.classList.contains("expanded")) {
-      console.log("Starting slideshow for", item.dataset.project);
-      startSlideshow(slideshow);
-    } else {
-      console.log("Stopping slideshow for", item.dataset.project);
-      stopSlideshow(slideshow);
-    }
-  });
-});
-
 // Slideshow Functionality
-function startSlideshow(slideshow) {
+function startSlideshow(slideshow, slideSelector = ".slide") {
   if (!slideshow) {
     console.error("Slideshow element not found");
     return;
   }
-  const slides = slideshow.querySelectorAll(".slide");
+  const slides = slideshow.querySelectorAll(slideSelector);
   if (slides.length === 0) {
     console.error("No slides found in slideshow");
     return;
@@ -84,20 +51,60 @@ function startSlideshow(slideshow) {
   slideshow.dataset.interval = intervalId.toString();
 }
 
-function stopSlideshow(slideshow) {
+function stopSlideshow(slideshow, slideSelector = ".slide") {
   if (!slideshow) {
     console.error("Slideshow element not found");
     return;
   }
-  const slides = slideshow.querySelectorAll(".slide");
+  const slides = slideshow.querySelectorAll(slideSelector);
   if (slideshow.dataset.interval) {
     clearInterval(Number(slideshow.dataset.interval));
     delete slideshow.dataset.interval;
   }
-  // UPDATED: Remove active class from all slides
   slides.forEach((slide) => slide.classList.remove("active"));
   console.log("Slideshow stopped");
 }
+
+// Portfolio Toggle and Slideshow
+const gridItems = document.querySelectorAll(".grid-item");
+
+gridItems.forEach((item) => {
+  item.addEventListener("click", (event) => {
+    const link = event.target.closest("a");
+    if (link) {
+      event.stopPropagation(); // Prevent card toggle when clicking links
+      return; // Allow link navigation
+    }
+
+    const slideshow = item.querySelector(".slideshow");
+    if (!slideshow) {
+      console.log("No slideshow found for", item.dataset.project);
+      return; // Skip if no slideshow
+    }
+
+    // Toggle expanded state
+    gridItems.forEach((i) => i !== item && i.classList.remove("expanded"));
+    item.classList.toggle("expanded");
+
+    // Start or stop slideshow
+    if (item.classList.contains("expanded")) {
+      console.log("Starting slideshow for", item.dataset.project);
+      startSlideshow(slideshow, ".slide");
+    } else {
+      console.log("Stopping slideshow for", item.dataset.project);
+      stopSlideshow(slideshow, ".slide");
+    }
+  });
+});
+
+// Project Page Slideshow
+document.addEventListener("DOMContentLoaded", () => {
+  const projectSlideshow = document.querySelector(".project-slideshow");
+  if (projectSlideshow) {
+    console.log("Initializing project slideshow");
+    startSlideshow(projectSlideshow, ".project-slide");
+  }
+});
 
 // Smooth Scroll for Back to Top
 const backToTop = document.querySelector(".back-to-top");
