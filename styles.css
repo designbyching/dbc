@@ -591,6 +591,13 @@ a:hover {
 }
 
 /* Media Queries */
+
+@media (min-width: 501px) {
+  :root {
+    --container-padding: 40px; /* Add 10px padding for desktop */
+  }
+}
+
 @media (max-width: 1000px) {
   .grid-container,
   .services-grid,
