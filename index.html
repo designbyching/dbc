@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Design by Ching portfolio by Mike Ching. Logo design and digital transformation services."
+      content="Design by Ching portfolio by Mike Ching. Logo design, branding, and digital transformation services."
     />
     <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="logo design, branding, digital transformation, UI/UX, web development, about, services, portfolio, blog"
+    />
+    <!-- UPDATED: Added keywords for SEO -->
     <meta
       property="og:title"
       content="Design by Ching—Directed by Mike Ching"
@@ -43,7 +48,8 @@
     <header class="site-header">
       <nav class="navbar">
         <div class="container nav-container">
-          <a href="index.html" class="nav-logo">
+          <a href="index.html" class="nav-logo" aria-current="page">
+            <!-- UPDATED: Added aria-current -->
             <img
               src="assets/logo/dbc-logo.svg"
               alt="Design by Ching Logo"
@@ -54,764 +60,798 @@
             <span class="toggle-text">MENU</span>
           </button>
           <ul class="nav-links" id="nav-links">
+            <li><a href="about.html">ABOUT</a></li>
+            <!-- UPDATED: Link to about.html -->
             <li><a href="#portfolio">PORTFOLIO</a></li>
+            <!-- Restored original in-page scroll -->
             <li><a href="#services">SERVICES</a></li>
+            <!-- Restored original in-page scroll -->
             <li><a href="#testimonials">TESTIMONIALS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-            <li><a href="#blogo">BLOG</a></li>
+            <!-- Restored original in-page scroll -->
+            <li><a href="blog.html">BLOG</a></li>
+            <!-- UPDATED: Fixed #blogo to blog.html -->
+            <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <!-- Intro Section Below Navbar -->
-    <section class="intro" id="intro">
-      <div class="container intro-content">
-        <h1 class="h1 bold">LOGOS, BRANDING & DIGITAL TRANSFORMATION</h1>
-        <p class="spaced-uppercase">
-          DESIGN, DEVELOP, STRATEGY, BRAND360, +HARD CODED WEBSITES.
-        </p>
-        <p class="spaced-uppercase">
-          Directed by Mike Ching | “Turning Chaos into Cash”
-        </p>
-        <div class="brief-buttons">
-          <a href="#contact" class="button-1">SCHEDULE A CALL</a>
-          <a href="#contact" class="button-2">START A PROJECT</a>
+    <!-- Main Content -->
+    <main>
+      <!-- Intro Section Below Navbar -->
+      <section class="intro" id="intro">
+        <div class="container intro-content">
+          <h1 class="h1 bold">LOGOS, BRANDING & DIGITAL TRANSFORMATION</h1>
+          <p class="spaced-uppercase">
+            DESIGN, DEVELOP, STRATEGY, BRAND360, +HARD CODED WEBSITES.
+          </p>
+          <p class="spaced-uppercase">
+            Directed by Mike Ching | “Turning Chaos into Cash”
+          </p>
+          <div class="brief-buttons">
+            <a href="contact.html" class="button-1">SCHEDULE A CALL</a>
+            <a href="contact.html" class="button-2">START A PROJECT</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Portfolio Grid -->
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <h2>Our Work:</h2>
-        <div class="grid-container">
-          <article
-            class="card grid-item"
-            data-project="logo-1"
-            role="button"
-            aria-label="Toggle Logo Project 1 slideshow"
-          >
-            <img
-              src="assets/logo/DBC63-01.png"
-              alt="Logo Project 1"
-              class="project-image"
-              loading="lazy"
-            />
-            <div class="card-header">
-              <span class="project-title">Logo Project 1</span>
-              <span class="toggle-expand">+</span>
-            </div>
-            <div class="grid-item-content">
-              <div class="expanded-header">
-                <a href="portfolio/logo-project-1.html" class="view-item"
-                  >VIEW ITEM</a
-                >
-                <span class="toggle-collapse">×</span>
+      <!-- Portfolio Grid -->
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h2>Our Work:</h2>
+          <div class="grid-container">
+            <article
+              class="card grid-item"
+              data-project="logo-1"
+              role="button"
+              aria-label="Toggle Logo Project 1 slideshow"
+            >
+              <img
+                src="assets/logo/DBC63-01.png"
+                alt="Logo Project 1"
+                class="project-image"
+                loading="lazy"
+              />
+              <div class="card-header">
+                <span class="project-title">Logo Project 1</span>
+                <span class="toggle-expand">+</span>
               </div>
-              <div class="slideshow">
-                <img
-                  src="assets/logo/DBC63-02.png"
-                  alt="Slide 1"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-03.png"
-                  alt="Slide 2"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-04.png"
-                  alt="Slide 3"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-05.png"
-                  alt="Slide 4"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-06.png"
-                  alt="Slide 5"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-07.png"
-                  alt="Slide 6"
-                  class="slide"
-                  loading="lazy"
-                />
+              <div class="grid-item-content">
+                <div class="expanded-header">
+                  <a href="portfolio/logo-project-1.html" class="view-item"
+                    >VIEW ITEM</a
+                  >
+                  <!-- UPDATED: Ensured link to logo-project-1.html -->
+                  <span class="toggle-collapse">×</span>
+                </div>
+                <div class="slideshow">
+                  <img
+                    src="assets/logo/DBC63-02.png"
+                    alt="Slide 1"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-03.png"
+                    alt="Slide 2"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-04.png"
+                    alt="Slide 3"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-05.png"
+                    alt="Slide 4"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-06.png"
+                    alt="Slide 5"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-07.png"
+                    alt="Slide 6"
+                    class="slide"
+                    loading="lazy"
+                  />
+                </div>
               </div>
-            </div>
-          </article>
-          <article
-            class="card grid-item"
-            data-project="logo-2"
-            role="button"
-            aria-label="Toggle Logo Project 2 slideshow"
-          >
-            <img
-              src="assets/logo/DBC63-07.png"
-              alt="Logo Project 2"
-              class="project-image"
-              loading="lazy"
-            />
-            <div class="card-header">
-              <span class="project-title">Logo Project 2</span>
-              <span class="toggle-expand">+</span>
-            </div>
-            <div class="grid-item-content">
-              <div class="expanded-header">
-                <a href="portfolio/logo-project-2.html" class="view-item"
-                  >VIEW ITEM</a
-                >
-                <span class="toggle-collapse">×</span>
+            </article>
+            <article
+              class="card grid-item"
+              data-project="logo-2"
+              role="button"
+              aria-label="Toggle Logo Project 2 slideshow"
+            >
+              <img
+                src="assets/logo/DBC63-07.png"
+                alt="Logo Project 2"
+                class="project-image"
+                loading="lazy"
+              />
+              <div class="card-header">
+                <span class="project-title">Logo Project 2</span>
+                <span class="toggle-expand">+</span>
               </div>
-              <div class="slideshow">
-                <img
-                  src="assets/logo/DBC63-08.png"
-                  alt="Slide 1"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-09.png"
-                  alt="Slide 2"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-10.png"
-                  alt="Slide 3"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-11.png"
-                  alt="Slide 4"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-12.png"
-                  alt="Slide 5"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-13.png"
-                  alt="Slide 6"
-                  class="slide"
-                  loading="lazy"
-                />
+              <div class="grid-item-content">
+                <div class="expanded-header">
+                  <a href="portfolio/logo-project-2.html" class="view-item"
+                    >VIEW ITEM</a
+                  >
+                  <!-- UPDATED: Link to logo-project-2.html (placeholder) -->
+                  <span class="toggle-collapse">×</span>
+                </div>
+                <div class="slideshow">
+                  <img
+                    src="assets/logo/DBC63-08.png"
+                    alt="Slide 1"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-09.png"
+                    alt="Slide 2"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-10.png"
+                    alt="Slide 3"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-11.png"
+                    alt="Slide 4"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-12.png"
+                    alt="Slide 5"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-13.png"
+                    alt="Slide 6"
+                    class="slide"
+                    loading="lazy"
+                  />
+                </div>
               </div>
-            </div>
-          </article>
-          <article
-            class="card grid-item"
-            data-project="logo-3"
-            role="button"
-            aria-label="Toggle Logo Project 3 slideshow"
-          >
-            <img
-              src="assets/logo/DBC63-14.png"
-              alt="Logo Project 3"
-              class="project-image"
-              loading="lazy"
-            />
-            <div class="card-header">
-              <span class="project-title">Logo Project 3</span>
-              <span class="toggle-expand">+</span>
-            </div>
-            <div class="grid-item-content">
-              <div class="expanded-header">
-                <a href="portfolio/logo-project-3.html" class="view-item"
-                  >VIEW ITEM</a
-                >
-                <span class="toggle-collapse">×</span>
+            </article>
+            <article
+              class="card grid-item"
+              data-project="logo-3"
+              role="button"
+              aria-label="Toggle Logo Project 3 slideshow"
+            >
+              <img
+                src="assets/logo/DBC63-14.png"
+                alt="Logo Project 3"
+                class="project-image"
+                loading="lazy"
+              />
+              <div class="card-header">
+                <span class="project-title">Logo Project 3</span>
+                <span class="toggle-expand">+</span>
               </div>
-              <div class="slideshow">
-                <img
-                  src="assets/logo/DBC63-15.png"
-                  alt="Slide 1"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-16.png"
-                  alt="Slide 2"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-17.png"
-                  alt="Slide 3"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-18.png"
-                  alt="Slide 4"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-19.png"
-                  alt="Slide 5"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-20.png"
-                  alt="Slide 6"
-                  class="slide"
-                  loading="lazy"
-                />
+              <div class="grid-item-content">
+                <div class="expanded-header">
+                  <a href="portfolio/logo-project-3.html" class="view-item"
+                    >VIEW ITEM</a
+                  >
+                  <!-- UPDATED: Link to logo-project-3.html (placeholder) -->
+                  <span class="toggle-collapse">×</span>
+                </div>
+                <div class="slideshow">
+                  <img
+                    src="assets/logo/DBC63-15.png"
+                    alt="Slide 1"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-16.png"
+                    alt="Slide 2"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-17.png"
+                    alt="Slide 3"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-18.png"
+                    alt="Slide 4"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-19.png"
+                    alt="Slide 5"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-20.png"
+                    alt="Slide 6"
+                    class="slide"
+                    loading="lazy"
+                  />
+                </div>
               </div>
-            </div>
-          </article>
-          <article
-            class="card grid-item"
-            data-project="logo-4"
-            role="button"
-            aria-label="Toggle Logo Project 4 slideshow"
-          >
-            <img
-              src="assets/logo/DBC63-21.png"
-              alt="Logo Project 4"
-              class="project-image"
-              loading="lazy"
-            />
-            <div class="card-header">
-              <span class="project-title">Logo Project 4</span>
-              <span class="toggle-expand">+</span>
-            </div>
-            <div class="grid-item-content">
-              <div class="expanded-header">
-                <a href="portfolio/logo-project-4.html" class="view-item"
-                  >VIEW ITEM</a
-                >
-                <span class="toggle-collapse">×</span>
+            </article>
+            <article
+              class="card grid-item"
+              data-project="logo-4"
+              role="button"
+              aria-label="Toggle Logo Project 4 slideshow"
+            >
+              <img
+                src="assets/logo/DBC63-21.png"
+                alt="Logo Project 4"
+                class="project-image"
+                loading="lazy"
+              />
+              <div class="card-header">
+                <span class="project-title">Logo Project 4</span>
+                <span class="toggle-expand">+</span>
               </div>
-              <div class="slideshow">
-                <img
-                  src="assets/logo/DBC63-22.png"
-                  alt="Slide 1"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-23.png"
-                  alt="Slide 2"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-24.png"
-                  alt="Slide 3"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-25.png"
-                  alt="Slide 4"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-26.png"
-                  alt="Slide 5"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-27.png"
-                  alt="Slide 6"
-                  class="slide"
-                  loading="lazy"
-                />
+              <div class="grid-item-content">
+                <div class="expanded-header">
+                  <a href="portfolio/logo-project-4.html" class="view-item"
+                    >VIEW ITEM</a
+                  >
+                  <!-- UPDATED: Link to logo-project-4.html (placeholder) -->
+                  <span class="toggle-collapse">×</span>
+                </div>
+                <div class="slideshow">
+                  <img
+                    src="assets/logo/DBC63-22.png"
+                    alt="Slide 1"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-23.png"
+                    alt="Slide 2"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-24.png"
+                    alt="Slide 3"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-25.png"
+                    alt="Slide 4"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-26.png"
+                    alt="Slide 5"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-27.png"
+                    alt="Slide 6"
+                    class="slide"
+                    loading="lazy"
+                  />
+                </div>
               </div>
-            </div>
-          </article>
-          <article
-            class="card grid-item"
-            data-project="logo-5"
-            role="button"
-            aria-label="Toggle Logo Project 5 slideshow"
-          >
-            <img
-              src="assets/logo/DBC63-28.png"
-              alt="Logo Project 5"
-              class="project-image"
-              loading="lazy"
-            />
-            <div class="card-header">
-              <span class="project-title">Logo Project 5</span>
-              <span class="toggle-expand">+</span>
-            </div>
-            <div class="grid-item-content">
-              <div class="expanded-header">
-                <a href="portfolio/logo-project-5.html" class="view-item"
-                  >VIEW ITEM</a
-                >
-                <span class="toggle-collapse">×</span>
+            </article>
+            <article
+              class="card grid-item"
+              data-project="logo-5"
+              role="button"
+              aria-label="Toggle Logo Project 5 slideshow"
+            >
+              <img
+                src="assets/logo/DBC63-28.png"
+                alt="Logo Project 5"
+                class="project-image"
+                loading="lazy"
+              />
+              <div class="card-header">
+                <span class="project-title">Logo Project 5</span>
+                <span class="toggle-expand">+</span>
               </div>
-              <div class="slideshow">
-                <img
-                  src="assets/logo/DBC63-29.png"
-                  alt="Slide 1"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-30.png"
-                  alt="Slide 2"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-31.png"
-                  alt="Slide 3"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-32.png"
-                  alt="Slide 4"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-33.png"
-                  alt="Slide 5"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-34.png"
-                  alt="Slide 6"
-                  class="slide"
-                  loading="lazy"
-                />
+              <div class="grid-item-content">
+                <div class="expanded-header">
+                  <a href="portfolio/logo-project-5.html" class="view-item"
+                    >VIEW ITEM</a
+                  >
+                  <!-- UPDATED: Link to logo-project-5.html (placeholder) -->
+                  <span class="toggle-collapse">×</span>
+                </div>
+                <div class="slideshow">
+                  <img
+                    src="assets/logo/DBC63-29.png"
+                    alt="Slide 1"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-30.png"
+                    alt="Slide 2"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-31.png"
+                    alt="Slide 3"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-32.png"
+                    alt="Slide 4"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-33.png"
+                    alt="Slide 5"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-34.png"
+                    alt="Slide 6"
+                    class="slide"
+                    loading="lazy"
+                  />
+                </div>
               </div>
-            </div>
-          </article>
-          <article
-            class="card grid-item"
-            data-project="logo-6"
-            role="button"
-            aria-label="Toggle Logo Project 6 slideshow"
-          >
-            <img
-              src="assets/logo/DBC63-35.png"
-              alt="Logo Project 6"
-              class="project-image"
-              loading="lazy"
-            />
-            <div class="card-header">
-              <span class="project-title">Logo Project 6</span>
-              <span class="toggle-expand">+</span>
-            </div>
-            <div class="grid-item-content">
-              <div class="expanded-header">
-                <a href="portfolio/logo-project-6.html" class="view-item"
-                  >VIEW ITEM</a
-                >
-                <span class="toggle-collapse">×</span>
+            </article>
+            <article
+              class="card grid-item"
+              data-project="logo-6"
+              role="button"
+              aria-label="Toggle Logo Project 6 slideshow"
+            >
+              <img
+                src="assets/logo/DBC63-35.png"
+                alt="Logo Project 6"
+                class="project-image"
+                loading="lazy"
+              />
+              <div class="card-header">
+                <span class="project-title">Logo Project 6</span>
+                <span class="toggle-expand">+</span>
               </div>
-              <div class="slideshow">
-                <img
-                  src="assets/logo/DBC63-36.png"
-                  alt="Slide 1"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-37.png"
-                  alt="Slide 2"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-38.png"
-                  alt="Slide 3"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-39.png"
-                  alt="Slide 4"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-40.png"
-                  alt="Slide 5"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-41.png"
-                  alt="Slide 6"
-                  class="slide"
-                  loading="lazy"
-                />
+              <div class="grid-item-content">
+                <div class="expanded-header">
+                  <a href="portfolio/logo-project-6.html" class="view-item"
+                    >VIEW ITEM</a
+                  >
+                  <!-- UPDATED: Link to logo-project-6.html (placeholder) -->
+                  <span class="toggle-collapse">×</span>
+                </div>
+                <div class="slideshow">
+                  <img
+                    src="assets/logo/DBC63-36.png"
+                    alt="Slide 1"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-37.png"
+                    alt="Slide 2"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-38.png"
+                    alt="Slide 3"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-39.png"
+                    alt="Slide 4"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-40.png"
+                    alt="Slide 5"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-41.png"
+                    alt="Slide 6"
+                    class="slide"
+                    loading="lazy"
+                  />
+                </div>
               </div>
-            </div>
-          </article>
-          <article
-            class="card grid-item"
-            data-project="logo-7"
-            role="button"
-            aria-label="Toggle Logo Project 7 slideshow"
-          >
-            <img
-              src="assets/logo/DBC63-42.png"
-              alt="Logo Project 7"
-              class="project-image"
-              loading="lazy"
-            />
-            <div class="card-header">
-              <span class="project-title">Logo Project 7</span>
-              <span class="toggle-expand">+</span>
-            </div>
-            <div class="grid-item-content">
-              <div class="expanded-header">
-                <a href="portfolio/logo-project-7.html" class="view-item"
-                  >VIEW ITEM</a
-                >
-                <span class="toggle-collapse">×</span>
+            </article>
+            <article
+              class="card grid-item"
+              data-project="logo-7"
+              role="button"
+              aria-label="Toggle Logo Project 7 slideshow"
+            >
+              <img
+                src="assets/logo/DBC63-42.png"
+                alt="Logo Project 7"
+                class="project-image"
+                loading="lazy"
+              />
+              <div class="card-header">
+                <span class="project-title">Logo Project 7</span>
+                <span class="toggle-expand">+</span>
               </div>
-              <div class="slideshow">
-                <img
-                  src="assets/logo/DBC63-43.png"
-                  alt="Slide 1"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-44.png"
-                  alt="Slide 2"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-45.png"
-                  alt="Slide 3"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-46.png"
-                  alt="Slide 4"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-47.png"
-                  alt="Slide 5"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-48.png"
-                  alt="Slide 6"
-                  class="slide"
-                  loading="lazy"
-                />
+              <div class="grid-item-content">
+                <div class="expanded-header">
+                  <a href="portfolio/logo-project-7.html" class="view-item"
+                    >VIEW ITEM</a
+                  >
+                  <!-- UPDATED: Link to logo-project-7.html (placeholder) -->
+                  <span class="toggle-collapse">×</span>
+                </div>
+                <div class="slideshow">
+                  <img
+                    src="assets/logo/DBC63-43.png"
+                    alt="Slide 1"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-44.png"
+                    alt="Slide 2"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-45.png"
+                    alt="Slide 3"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-46.png"
+                    alt="Slide 4"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-47.png"
+                    alt="Slide 5"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-48.png"
+                    alt="Slide 6"
+                    class="slide"
+                    loading="lazy"
+                  />
+                </div>
               </div>
-            </div>
-          </article>
-          <article
-            class="card grid-item"
-            data-project="logo-8"
-            role="button"
-            aria-label="Toggle Logo Project 8 slideshow"
-          >
-            <img
-              src="assets/logo/DBC63-49.png"
-              alt="Logo Project 8"
-              class="project-image"
-              loading="lazy"
-            />
-            <div class="card-header">
-              <span class="project-title">Logo Project 8</span>
-              <span class="toggle-expand">+</span>
-            </div>
-            <div class="grid-item-content">
-              <div class="expanded-header">
-                <a href="portfolio/logo-project-8.html" class="view-item"
-                  >VIEW ITEM</a
-                >
-                <span class="toggle-collapse">×</span>
+            </article>
+            <article
+              class="card grid-item"
+              data-project="logo-8"
+              role="button"
+              aria-label="Toggle Logo Project 8 slideshow"
+            >
+              <img
+                src="assets/logo/DBC63-49.png"
+                alt="Logo Project 8"
+                class="project-image"
+                loading="lazy"
+              />
+              <div class="card-header">
+                <span class="project-title">Logo Project 8</span>
+                <span class="toggle-expand">+</span>
               </div>
-              <div class="slideshow">
-                <img
-                  src="assets/logo/DBC63-50.png"
-                  alt="Slide 1"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-51.png"
-                  alt="Slide 2"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-52.png"
-                  alt="Slide 3"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-53.png"
-                  alt="Slide 4"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-54.png"
-                  alt="Slide 5"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-55.png"
-                  alt="Slide 6"
-                  class="slide"
-                  loading="lazy"
-                />
+              <div class="grid-item-content">
+                <div class="expanded-header">
+                  <a href="portfolio/logo-project-8.html" class="view-item"
+                    >VIEW ITEM</a
+                  >
+                  <!-- UPDATED: Link to logo-project-8.html (placeholder) -->
+                  <span class="toggle-collapse">×</span>
+                </div>
+                <div class="slideshow">
+                  <img
+                    src="assets/logo/DBC63-50.png"
+                    alt="Slide 1"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-51.png"
+                    alt="Slide 2"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-52.png"
+                    alt="Slide 3"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-53.png"
+                    alt="Slide 4"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-54.png"
+                    alt="Slide 5"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-55.png"
+                    alt="Slide 6"
+                    class="slide"
+                    loading="lazy"
+                  />
+                </div>
               </div>
-            </div>
-          </article>
-          <article
-            class="card grid-item"
-            data-project="logo-9"
-            role="button"
-            aria-label="Toggle Logo Project 9 slideshow"
-          >
-            <img
-              src="assets/logo/DBC63-56.png"
-              alt="Logo Project 9"
-              class="project-image"
-              loading="lazy"
-            />
-            <div class="card-header">
-              <span class="project-title">Logo Project 9</span>
-              <span class="toggle-expand">+</span>
-            </div>
-            <div class="grid-item-content">
-              <div class="expanded-header">
-                <a href="portfolio/logo-project-9.html" class="view-item"
-                  >VIEW ITEM</a
-                >
-                <span class="toggle-collapse">×</span>
+            </article>
+            <article
+              class="card grid-item"
+              data-project="logo-9"
+              role="button"
+              aria-label="Toggle Logo Project 9 slideshow"
+            >
+              <img
+                src="assets/logo/DBC63-56.png"
+                alt="Logo Project 9"
+                class="project-image"
+                loading="lazy"
+              />
+              <div class="card-header">
+                <span class="project-title">Logo Project 9</span>
+                <span class="toggle-expand">+</span>
               </div>
-              <div class="slideshow">
-                <img
-                  src="assets/logo/DBC63-57.png"
-                  alt="Slide 1"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-58.png"
-                  alt="Slide 2"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-59.png"
-                  alt="Slide 3"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-60.png"
-                  alt="Slide 4"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-61.png"
-                  alt="Slide 5"
-                  class="slide"
-                  loading="lazy"
-                />
-                <img
-                  src="assets/logo/DBC63-62.png"
-                  alt="Slide 6"
-                  class="slide"
-                  loading="lazy"
-                />
+              <div class="grid-item-content">
+                <div class="expanded-header">
+                  <a href="portfolio/logo-project-9.html" class="view-item"
+                    >VIEW ITEM</a
+                  >
+                  <!-- UPDATED: Link to logo-project-9.html (placeholder) -->
+                  <span class="toggle-collapse">×</span>
+                </div>
+                <div class="slideshow">
+                  <img
+                    src="assets/logo/DBC63-57.png"
+                    alt="Slide 1"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-58.png"
+                    alt="Slide 2"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-59.png"
+                    alt="Slide 3"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-60.png"
+                    alt="Slide 4"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-61.png"
+                    alt="Slide 5"
+                    class="slide"
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/logo/DBC63-62.png"
+                    alt="Slide 6"
+                    class="slide"
+                    loading="lazy"
+                  />
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
+          <div class="portfolio-buttons">
+            <!-- UPDATED: Added button container -->
+            <a href="portfolio.html" class="view-full-portfolio"
+              >VIEW FULL PORTFOLIO</a
+            >
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-      <div class="container">
-        <h2>Our Services:</h2>
-        <div class="services-grid">
-          <article class="card service-card">
-            <h3 class="service-title">Design</h3>
-            <p class="service-description">
-              We craft intuitive experiences that solve real problems—turning
-              frustration into engagement and chaos into clarity.
-            </p>
-          </article>
-          <article class="card service-card">
-            <h3 class="service-title">Develop</h3>
-            <p class="service-description">
-              We build robust, scalable solutions that bring your vision to
-              life, ensuring your digital presence stands the test of time.
-            </p>
-          </article>
-          <article class="card service-card">
-            <h3 class="service-title">Strategy</h3>
-            <p class="service-description">
-              We guide your digital transformation with clear, impactful
-              strategies—leading you to dominate your market with confidence.
-            </p>
-          </article>
-          <article class="card service-card">
-            <h3 class="service-title">Branding</h3>
-            <p class="service-description">
-              We create compelling brand identities that resonate with your
-              audience, fostering loyalty and driving recognition.
-            </p>
-          </article>
-          <article class="card service-card">
-            <h3 class="service-title">Digital Transformation</h3>
-            <p class="service-description">
-              We modernize your operations with cutting-edge technology,
-              aligning your business for efficiency and growth.
-            </p>
-          </article>
-          <article class="card service-card">
-            <h3 class="service-title">UI/UX Design</h3>
-            <p class="service-description">
-              We design user-centric interfaces that blend aesthetics with
-              functionality, elevating user satisfaction and engagement.
-            </p>
-          </article>
+      <!-- Services Section -->
+      <section class="services" id="services">
+        <div class="container">
+          <h2>Our Services:</h2>
+          <div class="services-grid">
+            <article class="card service-card">
+              <h3 class="service-title">Design</h3>
+              <p class="service-description">
+                We craft intuitive experiences that solve real problems—turning
+                frustration into engagement and chaos into clarity.
+              </p>
+            </article>
+            <article class="card service-card">
+              <h3 class="service-title">Develop</h3>
+              <p class="service-description">
+                We build robust, scalable solutions that bring your vision to
+                life, ensuring your digital presence stands the test of time.
+              </p>
+            </article>
+            <article class="card service-card">
+              <h3 class="service-title">Strategy</h3>
+              <p class="service-description">
+                We guide your digital transformation with clear, impactful
+                strategies—leading you to dominate your market with confidence.
+              </p>
+            </article>
+            <article class="card service-card">
+              <h3 class="service-title">Branding</h3>
+              <p class="service-description">
+                We create compelling brand identities that resonate with your
+                audience, fostering loyalty and driving recognition.
+              </p>
+            </article>
+            <article class="card service-card">
+              <h3 class="service-title">Digital Transformation</h3>
+              <p class="service-description">
+                We modernize your operations with cutting-edge technology,
+                aligning your business for efficiency and growth.
+              </p>
+            </article>
+            <article class="card service-card">
+              <h3 class="service-title">UI/UX Design</h3>
+              <p class="service-description">
+                We design user-centric interfaces that blend aesthetics with
+                functionality, elevating user satisfaction and engagement.
+              </p>
+            </article>
+          </div>
+          <div class="services-buttons">
+            <!-- UPDATED: Added button container -->
+            <a href="services.html" class="learn-more">LEARN MORE</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-      <div class="container">
-        <h2>Testimonial Cards:</h2>
-        <div class="testimonials-grid">
-          <article class="card testimonial-card">
-            <img
-              src="assets/testimonials/Barbie-Lee Kirby.png"
-              alt="Jane Doe"
-              class="testimonial-image"
-              loading="lazy"
-            />
-            <p class="testimonial-quote">
-              "IX transformed our digital presence with unmatched creativity and
-              precision. A true game-changer!"
-            </p>
-            <p class="testimonial-author">Jane Doe, CEO of TechCorp</p>
-          </article>
-          <article class="card testimonial-card">
-            <img
-              src="assets/testimonials/Brad Franzen.png"
-              alt="John Smith"
-              class="testimonial-image"
-              loading="lazy"
-            />
-            <p class="testimonial-quote">
-              "Mike and his team delivered beyond expectations, streamlining our
-              operations seamlessly."
-            </p>
-            <p class="testimonial-author">John Smith, Founder of StartUpX</p>
-          </article>
-          <article class="card testimonial-card">
-            <img
-              src="assets/testimonials/Charbel Azzi.png"
-              alt="Emily Brown"
-              class="testimonial-image"
-              loading="lazy"
-            />
-            <p class="testimonial-quote">
-              "Their strategic insight and technical expertise gave us a
-              competitive edge."
-            </p>
-            <p class="testimonial-author">Emily Brown, CMO of InnovateCo</p>
-          </article>
-          <article class="card testimonial-card">
-            <img
-              src="assets/testimonials/Glen Offereins.png"
-              alt="Michael Lee"
-              class="testimonial-image"
-              loading="lazy"
-            />
-            <p class="testimonial-quote">
-              "The branding work was phenomenal, creating a lasting impact on
-              our market presence."
-            </p>
-            <p class="testimonial-author">Michael Lee, Director of BrandWave</p>
-          </article>
-          <article class="card testimonial-card">
-            <img
-              src="assets/testimonials/Balraj Ougra.png"
-              alt="Sarah Kim"
-              class="testimonial-image"
-              loading="lazy"
-            />
-            <p class="testimonial-quote">
-              "Their UI/UX designs turned our app into a user favorite, boosting
-              engagement significantly."
-            </p>
-            <p class="testimonial-author">Sarah Kim, CTO of AppVenture</p>
-          </article>
-          <article class="card testimonial-card">
-            <img
-              src="assets/testimonials/Zahir Fuard.png"
-              alt="David Chen"
-              class="testimonial-image"
-              loading="lazy"
-            />
-            <p class="testimonial-quote">
-              "A seamless digital transformation that positioned us as industry
-              leaders."
-            </p>
-            <p class="testimonial-author">David Chen, CEO of FutureTech</p>
-          </article>
+      <!-- Testimonials Section -->
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <h2>Testimonial Cards:</h2>
+          <div class="testimonials-grid">
+            <article class="card testimonial-card">
+              <img
+                src="assets/testimonials/Barbie-Lee Kirby.png"
+                alt="Jane Doe"
+                class="testimonial-image"
+                loading="lazy"
+              />
+              <p class="testimonial-quote">
+                "IX transformed our digital presence with unmatched creativity
+                and precision. A true game-changer!"
+              </p>
+              <p class="testimonial-author">Jane Doe, CEO of TechCorp</p>
+            </article>
+            <article class="card testimonial-card">
+              <img
+                src="assets/testimonials/Brad Franzen.png"
+                alt="John Smith"
+                class="testimonial-image"
+                loading="lazy"
+              />
+              <p class="testimonial-quote">
+                "Mike and his team delivered beyond expectations, streamlining
+                our operations seamlessly."
+              </p>
+              <p class="testimonial-author">John Smith, Founder of StartUpX</p>
+            </article>
+            <article class="card testimonial-card">
+              <img
+                src="assets/testimonials/Charbel Azzi.png"
+                alt="Emily Brown"
+                class="testimonial-image"
+                loading="lazy"
+              />
+              <p class="testimonial-quote">
+                "Their strategic insight and technical expertise gave us a
+                competitive edge."
+              </p>
+              <p class="testimonial-author">Emily Brown, CMO of InnovateCo</p>
+            </article>
+            <article class="card testimonial-card">
+              <img
+                src="assets/testimonials/Glen Offereins.png"
+                alt="Michael Lee"
+                class="testimonial-image"
+                loading="lazy"
+              />
+              <p class="testimonial-quote">
+                "The branding work was phenomenal, creating a lasting impact on
+                our market presence."
+              </p>
+              <p class="testimonial-author">
+                Michael Lee, Director of BrandWave
+              </p>
+            </article>
+            <article class="card testimonial-card">
+              <img
+                src="assets/testimonials/Balraj Ougra.png"
+                alt="Sarah Kim"
+                class="testimonial-image"
+                loading="lazy"
+              />
+              <p class="testimonial-quote">
+                "Their UI/UX designs turned our app into a user favorite,
+                boosting engagement significantly."
+              </p>
+              <p class="testimonial-author">Sarah Kim, CTO of AppVenture</p>
+            </article>
+            <article class="card testimonial-card">
+              <img
+                src="assets/testimonials/Zahir Fuard.png"
+                alt="David Chen"
+                class="testimonial-image"
+                loading="lazy"
+              />
+              <p class="testimonial-quote">
+                "A seamless digital transformation that positioned us as
+                industry leaders."
+              </p>
+              <p class="testimonial-author">David Chen, CEO of FutureTech</p>
+            </article>
+          </div>
+          <div class="testimonials-buttons">
+            <!-- UPDATED: Added button container -->
+            <a href="testimonials.html" class="view-more">VIEW MORE</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Design Brief Section -->
-    <section class="design-brief" id="design-brief">
-      <div class="container brief-content">
-        <h2>Ready to Transform Your Brand?</h2>
-        <p class="spaced-uppercase">
-          Share your vision with us, and we’ll craft a logo and digital strategy
-          that sets you apart.
-        </p>
-        <p class="spaced-uppercase">
-          Start your project today with Mike Ching’s expertise.
-        </p>
-        <div class="brief-buttons">
-          <a href="#contact" class="button-1">Start a Project Now</a>
-          <a href="#contact" class="button-2">Schedule a Call</a>
+      <!-- Design Brief Section -->
+      <section class="design-brief" id="design-brief">
+        <div class="container brief-content">
+          <h2>Ready to Transform Your Brand?</h2>
+          <p class="spaced-uppercase">
+            Share your vision with us, and we’ll craft a logo and digital
+            strategy that sets you apart.
+          </p>
+          <p class="spaced-uppercase">
+            Start your project today with Mike Ching’s expertise.
+          </p>
+          <div class="brief-buttons">
+            <a href="contact.html" class="button-1">Start a Project Now</a>
+            <a href="contact.html" class="button-2">Schedule a Call</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
