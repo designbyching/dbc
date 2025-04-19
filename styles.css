@@ -1,7 +1,7 @@
 /* Root Variables */
 :root {
   /* Colors */
-  --accent-color: #0c49f5; /* DBC-blue for logo */
+  --accent-color: #dfb011; /* DBC-blue for logo */
   --bg-color: #ffffff; /* White */
   --text-color: #0c0c0c; /* Rich-black */
   --card-bg: #ebebeb; /* Lightest-grey for cards */
@@ -390,7 +390,7 @@ a:hover {
 
 .project-title {
   font-size: var(--font-heading);
-  color: var(--text-color);
+  color: var(--accent-color);
   text-align: left;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -398,13 +398,14 @@ a:hover {
 
 .toggle-expand,
 .toggle-collapse {
-  font-size: var(--text-size);
+  font-size: var(--text-normal);
   color: var(--text-color);
   cursor: pointer;
 }
 
 .grid-item:hover .project-title {
   color: var(--accent-color);
+  text-decoration: underline;
 }
 
 .grid-item.expanded .project-image {
