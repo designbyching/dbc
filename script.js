@@ -9,7 +9,7 @@ if (navToggle && navLinks && toggleText) {
     navToggle.classList.toggle("active");
     // Swap MENU/CLOSE text
     toggleText.textContent = navLinks.classList.contains("active")
-      ? "CLOSE"
+      ? "CLOSE MENU"
       : "MENU";
   });
 

@@ -9,8 +9,8 @@
   --secondary-text: #4d4d4d; /* Medium-grey for secondary text */
 
   /* Shadows */
-  --shadow-portfolio: 0 0 12px rgba(0, 0, 0, 0.25); /* Portfolio card hover */
-  --shadow-button: 0 0 15px rgba(0, 0, 0, 0.3); /* Button hover */
+  --shadow-portfolio: 0 0 15px rgba(0, 0, 0, 0.4); /* Portfolio card hover */
+  --shadow-button: 0 0 15px rgba(0, 0, 0, 0.4); /* Button hover */
 
   /* Font Settings */
   --font-heading: "Lato", sans-serif;
@@ -111,6 +111,11 @@ main {
   color: var(--text-color);
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  transition: color 0.3s ease;
+}
+
+.toggle-text:hover {
+  color: var(--accent-color);
 }
 
 .nav-links {
@@ -406,6 +411,7 @@ a:hover {
 .grid-item:hover .project-title {
   color: var(--accent-color);
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .grid-item.expanded .project-image {
@@ -444,7 +450,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   padding: var(--padding-card);
-  background: transparent;
+  background: var(--accent-color);
   z-index: 3;
 }
 
@@ -457,7 +463,9 @@ a:hover {
 }
 
 .view-item:hover {
-  color: var(--accent-color);
+  color: var(--text-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .slideshow {
